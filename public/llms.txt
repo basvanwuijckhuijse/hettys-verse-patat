@@ -1,0 +1,16 @@
+# Hetty's Verse Patat
+
+Ambachtelijke, dagelijks verse patat en snacks van topkwaliteit aan de Langeweg 98 in Ooltgensplaat. Geniet van de lekkerste snacks met liefde voor het ambacht.
+
+## Core Information
+- **Location:** Langeweg 98, 3257 KD Ooltgensplaat, Nederland
+- **Phone:** +31 187 639 408
+- **Opening Hours:** Tuesday - Sunday, 11:30 - 20:30. Monday closed.
+- **Cuisine:** Dutch, Fries, Snacks
+
+## Sections
+- [Menukaart](https://hettysversepatat.nl/#menu): Overzicht van onze verse patat, snacks en dranken.
+- [Ons Verhaal](https://hettysversepatat.nl/#story): De geschiedenis van Hetty's, van kar tot modern cafetaria.
+- [Vacatures](https://hettysversepatat.nl/#community): Werken bij Hetty's Verse Patat.
+- [Veelgestelde vragen](https://hettysversepatat.nl/#faq): Antwoorden op vragen over bestellen, parkeren, allergenen en meer.
+- [Bezoek](https://hettysversepatat.nl/#bezoek): Contactgegevens en routebeschrijving.

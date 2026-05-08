@@ -10,7 +10,7 @@ const Visit = () => {
           {/* Big address card */}
           <article className="col-span-12 md:col-span-7 bg-ink text-paper rounded-[2rem] p-8 md:p-12 min-h-[420px] flex flex-col justify-between relative overflow-hidden">
             <div>
-              <span className="text-xs uppercase tracking-[0.25em] text-primary font-semibold">06 / Bezoek</span>
+              <span className="text-xs uppercase tracking-[0.25em] text-primary font-semibold">07 / Bezoek</span>
               <h2 className="mt-5 font-display text-5xl md:text-7xl leading-[0.9] text-balance">
                 Tot snel<br />
                 <span className="italic font-light text-primary">aan de Langeweg</span>.

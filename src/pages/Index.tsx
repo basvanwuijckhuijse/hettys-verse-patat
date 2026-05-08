@@ -4,6 +4,7 @@ import Menu from "@/components/Menu";
 import Story from "@/components/Story";
 import Reviews from "@/components/Reviews";
 import Community from "@/components/Community";
+import FAQ from "@/components/FAQ";
 import Visit from "@/components/Visit";
 import Footer from "@/components/Footer";
 import StickyActionBar from "@/components/StickyActionBar";
@@ -17,6 +18,7 @@ const Index = () => {
       <Story />
       <Reviews />
       <Community />
+      <FAQ />
       <Visit />
       <Footer />
       <StickyActionBar />
