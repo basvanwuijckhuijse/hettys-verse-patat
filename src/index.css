@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hetty's Verse Patat — Artisan editorial design system. All colors HSL. */
+
+@layer base {
+  :root {
+    /* Brand palette */
+    --background: 0 0% 100%;            /* #FFFFFF */
+    --foreground: 0 0% 20%;             /* #333333 */
+
+    --paper: 42 35% 96%;                /* warm off-white for sections */
+    --paper-deep: 38 28% 92%;
+
+    --primary: 46 96% 45%;              /* #E2B007 golden yellow */
+    --primary-foreground: 0 0% 12%;
+    --primary-soft: 46 96% 45% / 0.10;
+
+    --secondary: 3 26% 23%;             /* #4A2C2A artisan chocolate */
+    --secondary-foreground: 0 0% 100%;
+
+    --ink: 0 0% 12%;                    /* near-black for editorial type */
+    --muted: 38 18% 88%;
+    --muted-foreground: 0 0% 38%;
+
+    --accent: 46 96% 45%;
+    --accent-foreground: 0 0% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 36 16% 86%;
+    --input: 36 16% 86%;
+    --ring: 46 96% 45%;
+
+    --radius: 1rem;
+
+    /* Editorial gradients & shadows */
+    --gradient-warm: linear-gradient(135deg, hsl(46 96% 55%), hsl(38 92% 48%));
+    --gradient-ink: linear-gradient(180deg, hsl(3 26% 18%), hsl(3 26% 12%));
+    --shadow-bento: 0 30px 60px -30px hsl(3 26% 23% / 0.35);
+    --shadow-soft: 0 12px 40px -20px hsl(3 26% 23% / 0.25);
+
+  --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+
+.dark {
+  --background: 3 26% 8%;
+  --foreground: 42 35% 96%;
+  
+  --paper: 3 26% 12%;
+  --paper-deep: 3 26% 10%;
+    
+    --ink: 42 35% 96%;
+    --muted: 3 26% 18%;
+    --muted-foreground: 42 20% 60%;
+    
+    --primary: 46 96% 45%;
+    --primary-foreground: 0 0% 12%;
+    --primary-soft: 46 96% 45% / 0.15;
+    
+    --secondary: 3 26% 16%;
+    --secondary-foreground: 42 35% 96%;
+    
+    --accent: 46 96% 45%;
+    --accent-foreground: 0 0% 12%;
+    
+    --card: 3 26% 12%;
+    --card-foreground: 42 35% 96%;
+    
+    --popover: 3 26% 12%;
+    --popover-foreground: 42 35% 96%;
+    
+    --border: 3 26% 20%;
+    --input: 3 26% 20%;
+    --ring: 46 96% 45%;
+    
+  --gradient-warm: linear-gradient(135deg, hsl(46 96% 35%), hsl(38 92% 30%));
+  --gradient-ink: linear-gradient(180deg, hsl(3 26% 10%), hsl(3 26% 6%));
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground transition-colors duration-500;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: 'ss01', 'cv11';
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 0.92;
+  }
+}
+
+@layer utilities {
+  /* Subtle paper / potato sack grain — pure CSS, no images */
+  .bg-paper {
+    background-color: hsl(var(--paper));
+    background-image:
+      radial-gradient(hsl(var(--ink) / 0.04) 1px, transparent 1px),
+      radial-gradient(hsl(var(--ink) / 0.03) 1px, transparent 1px);
+    background-size: 18px 18px, 32px 32px;
+    background-position: 0 0, 9px 9px;
+  }
+  .bg-sack {
+    background-color: hsl(var(--paper-deep));
+    background-image:
+      repeating-linear-gradient(45deg, hsl(var(--ink) / 0.10) 0 1px, transparent 1px 6px),
+      repeating-linear-gradient(-45deg, hsl(var(--ink) / 0.08) 0 1px, transparent 1px 8px);
+  }
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+
+  .hover-lift {
+    transition: transform 0.4s var(--transition-smooth), box-shadow 0.4s var(--transition-smooth);
+  }
+  .hover-lift:hover { transform: translateY(-4px); box-shadow: var(--shadow-bento); }
+
+  .menu-item-hover {
+    transition: background-color 0.3s var(--transition-smooth), padding 0.3s var(--transition-smooth);
+  }
+  .menu-item-hover:hover { background-color: hsl(46 96% 45% / 0.10); }
+
+  .marquee {
+    animation: marquee 40s linear infinite;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.9s var(--transition-smooth), transform 0.9s var(--transition-smooth);
+  }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-10px) rotate(-2deg); }
+}
+.animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
