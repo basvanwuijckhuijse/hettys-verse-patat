@@ -220,7 +220,7 @@ const Menu = () => {
 
         {/* Tabs — scrollable on mobile */}
         <div className="overflow-x-auto pb-4 mb-10 -mx-4 px-4 scrollbar-hide">
-          <div className="flex flex-nowrap md:flex-wrap items-center gap-2 border-b border-ink/10 pb-4 min-w-max md:min-w-0">
+          <div className="flex flex-nowrap items-center gap-2 border-b border-ink/10 pb-4 min-w-max">
             {CATEGORIES.map((c) => (
               <button
                 key={c.id}
