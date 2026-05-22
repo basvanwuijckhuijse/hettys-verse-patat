@@ -32,17 +32,6 @@ const Community = () => {
               terecht in een gezellig, hecht en gedreven team.
             </p>
 
-            {/* Quote */}
-            <blockquote className="mt-10 border-l-2 border-primary pl-6 py-2">
-              <p className="font-display text-2xl md:text-3xl leading-snug text-balance">
-                "Werken bij Hetty's voelt als familie. De sfeer in het team is altijd goed en we gaan elke dag voor de
-                allerbeste service voor onze klanten."
-              </p>
-              <footer className="mt-4 text-sm text-secondary-foreground/60">
-                <span className="text-primary font-semibold">Bas</span>, medewerker — bij Hetty's sinds 2013
-              </footer>
-            </blockquote>
-
             <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
               <div>
                 <div className="font-display text-4xl text-primary">10+</div>
@@ -59,7 +48,7 @@ const Community = () => {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href="mailto:info@hettysversepatat.nl" className="inline-flex items-center gap-2 bg-primary text-ink font-semibold px-6 py-3 rounded-full text-sm hover:bg-primary/90 transition-colors">
+              <a href="mailto:hettywesdorp78@hotmail.com" className="inline-flex items-center gap-2 bg-primary text-ink font-semibold px-6 py-3 rounded-full text-sm hover:bg-primary/90 transition-colors">
                 Solliciteer direct <ArrowUpRight className="w-4 h-4" />
               </a>
               <a href="https://www.facebook.com/p/Hettys-verse-patat-100057209839592/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-secondary-foreground border-b border-primary pb-1 hover:gap-3 transition-all text-sm">

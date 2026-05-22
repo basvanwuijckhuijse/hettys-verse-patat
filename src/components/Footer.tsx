@@ -32,13 +32,13 @@ const Footer = () => {
             <div className="text-xs uppercase tracking-[0.2em] text-primary mb-3">Volg</div>
             <ul className="space-y-2 text-sm text-paper/75">
               <li><a href="https://www.facebook.com/p/Hettys-verse-patat-100057209839592/" target="_blank" rel="noreferrer" className="hover:text-primary">Facebook</a></li>
-              <li><a href="#" className="hover:text-primary">Stuur een email</a></li>
+              <li><a href="mailto:hettywesdorp78@hotmail.com" className="hover:text-primary">Stuur een email</a></li>
             </ul>
           </div>
         </div>
         <div className="pt-6 border-t border-paper/10 flex flex-col md:flex-row gap-3 justify-between text-xs text-paper/50">
           <div>© {new Date().getFullYear()} Hetty's Verse Patat — Alle rechten voorbehouden.</div>
-          <div>Lekkere snacks · KvK 00000000 · Met liefde gebakken</div>
+          <div>Met liefde bereid · Ontworpen door De Vormbrouwers</div>
         </div>
       </div>
     </footer>

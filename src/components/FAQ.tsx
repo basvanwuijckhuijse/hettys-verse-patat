@@ -36,28 +36,31 @@ const FAQ = () => {
       a: "Ja, in onze menukaart vind je verschillende vegetarische en glutenvrije opties. Vraag gerust aan een van onze medewerkers welke snacks geschikt zijn voor jouw wensen."
     },
     {
+      q: "Zijn honden welkom in de zaak?",
+      a: "Ja, honden zijn van harte welkom bij ons in de zaak. Je trouwe viervoeter mag gewoon mee naar binnen terwijl je bestelt of een hapje eet — we zorgen graag dat ook je hond zich bij ons thuis voelt."
+    },
+    {
       q: "Waar kan ik de allergeneninformatie van jullie producten vinden?",
       a: "Voor een actueel overzicht van allergenen kun je het beste even aan een medewerker op locatie vragen. Zij helpen je graag met informatie over de ingrediënten van onze snacks."
     },
     {
       q: "Zijn jullie snacks halal, en in welke olie bakken jullie?",
-      a: "Een deel van ons assortiment is halal. Let op: alle snacks worden in hetzelfde vet gebakken, dus we kunnen kruisbesmetting niet uitsluiten. Onze patat wordt apart gebakken in zonnebloemolie, gescheiden van de snacks."
+      a: "Een deel van ons assortiment is halal. Let op: alle snacks worden in hetzelfde vet gebakken, dus we kunnen kruisbesmetting niet uitsluiten. Onze patat wordt apart gebakken in sojaolie, gescheiden van de snacks."
     },
     {
       q: "Worden jullie snacks en patat vers bereid?",
       a: "Onze patat wordt elke dag vers gesneden van de beste aardappelen — wij geloven in het echte ambacht. Voor onze snacks werken we met topkwaliteit merken, zodat je altijd verzekerd bent van smaak en kwaliteit."
     },
     {
-      q: "Doen jullie schotels of bittergarnituur voor feesten en groepen om af te halen?",
+      q: "Doen jullie bittergarnituur voor feesten en groepen om af te halen?",
       a: (
         <>
-          Wij hebben geen snackschotels, maar wel verschillende menu's en schotels op de kaart, zoals shoarma, hamburgers en spareribs. 
-          Daarnaast kun je bij ons grote porties bittergarnituur bestellen. Ook andere grote bestellingen voor feesten of groepen zijn mogelijk — 
-          neem hiervoor telefonisch contact met ons op via <a href="tel:+31187639408" className="text-primary hover:underline font-semibold">0187 639 408</a>, 
+          Bij ons kun je grote porties bittergarnituur bestellen. Ook andere grote bestellingen voor feesten of groepen zijn mogelijk —
+          neem hiervoor telefonisch contact met ons op via <a href="tel:+31187639408" className="text-primary hover:underline font-semibold">0187 639 408</a>,
           dan bespreken we de mogelijkheden.
         </>
       ),
-      textA: "Wij hebben geen snackschotels, maar wel verschillende menu's en schotels op de kaart, zoals shoarma, hamburgers en spareribs. Daarnaast kun je bij ons grote porties bittergarnituur bestellen. Ook andere grote bestellingen voor feesten of groepen zijn mogelijk — neem hiervoor telefonisch contact met ons op via 0187 639 408, dan bespreken we de mogelijkheden."
+      textA: "Bij ons kun je grote porties bittergarnituur bestellen. Ook andere grote bestellingen voor feesten of groepen zijn mogelijk — neem hiervoor telefonisch contact met ons op via 0187 639 408, dan bespreken we de mogelijkheden."
     },
     {
       q: "Zijn jullie ook open op zondag en feestdagen?",
